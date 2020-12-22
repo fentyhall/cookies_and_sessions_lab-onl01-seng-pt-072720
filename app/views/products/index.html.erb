@@ -1,6 +1,6 @@
-<%= form_tag @cart do |f| %>
-    <%= f.label_tag :product %>
-    <%= f.text_field_Tag :product %>
+<%= form_for @cart do |f| %>
+    <%= f.label :product %>
+    <%= f.text_field :product %>
     
-    <%= f.submit_tag "add to cart" %>
+    <%= f.submit %>
 <% end %>

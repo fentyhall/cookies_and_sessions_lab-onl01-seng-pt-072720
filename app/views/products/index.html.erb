@@ -2,9 +2,10 @@
     <%= item %>
 <% end %>
 
-<%= form_tag({controller: 'products', action: 'add', method: 'post'}) do %>
+<%= form_tag('/add') do %>
+<!--- form_tag('{controller: 'products', action: 'add', method: 'post'}') --->
     <%= label_tag :product %>
     <%= text_field_tag :product %>
     
-    <input type="submit" value="add to cart">
+    <%= submit_tag "add to cart" %>
 <% end %>
